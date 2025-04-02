@@ -1,0 +1,211 @@
+.board {
+  padding: 20px;
+  // min-height: 100vh;
+  background-color: #212224;
+
+  .columnHeader {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #f1f1f1;
+    font-size: 16px;
+    border-radius: 10px;
+    justify-content: space-between;
+    div {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+    }
+    h2 {
+      font-weight: bold;
+      color: #f1f1f1;
+      font-size: 16px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      padding: 5px 10px;
+      border-radius: 16px;
+    }
+    span {
+      font-size: 16px;
+    }
+
+    button {
+      width: 26px;
+      height: 26px;
+      border: none;
+      color: white;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+  }
+  .columnHeader.open {
+    background-color: rgba(193, 232, 65, 0.2);
+    h2 {
+      div {
+        background-color: rgba(193, 232, 65, 1);
+        width: 12px;
+        height: 12px;
+        border-radius: 99px;
+      }
+      background-color: rgba(193, 232, 65, 0.5);
+    }
+    span {
+      color: rgba(193, 232, 65, 1);
+    }
+  }
+  .columnHeader.inProgress {
+    background-color: rgba(203, 93, 0, 0.2);
+    h2 {
+      div {
+        background-color: rgba(203, 93, 0, 1);
+        width: 12px;
+        height: 12px;
+        border-radius: 99px;
+      }
+      background-color: rgba(203, 93, 0, 0.5);
+    }
+    span {
+      color: rgba(203, 93, 0, 1);
+    }
+  }
+  .columnHeader.testing {
+    background-color: rgba(66, 59, 245, 0.4);
+    h2 {
+      div {
+        background-color: rgba(66, 59, 245, 1);
+        width: 12px;
+        height: 12px;
+        border-radius: 99px;
+      }
+      background-color: rgba(66, 59, 245, 0.5);
+    }
+    span {
+      color: rgba(66, 59, 245, 1);
+    }
+  }
+  .columnHeader.completed {
+    background-color: rgba(19, 133, 101, 0.2);
+    h2 {
+      div {
+        background-color: rgba(19, 133, 101, 1);
+        width: 12px;
+        height: 12px;
+        border-radius: 99px;
+      }
+      background-color: rgba(19, 133, 101, 0.5);
+    }
+    span {
+      color: rgba(19, 133, 101, 1);
+    }
+  }
+}
+
+.column.open {
+  background-color: rgba(193, 232, 65, 0.2);
+}
+.column.inProgress {
+  background-color: rgba(203, 93, 0, 0.2);
+}
+.column.testing {
+  background-color: rgba(66, 59, 245, 0.4);
+}
+.column.completed {
+  background-color: rgba(19, 133, 101, 0.2);
+}
+
+.column {
+  padding: 10px;
+  // min-height: 600px;
+  // max-height: 700px;
+  // overflow-y: auto;
+  background-color: transparent;
+  border-right: 1px solid #474a52;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  box-shadow: none;
+  border-radius: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #474a52;
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent !important;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #474a52;
+    border-radius: 4px;
+    border: 2px solid transparent;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #626569;
+  }
+  :global(.ant-card-body) {
+    padding: 0px !important;
+    border: none;
+  }
+}
+
+.columnHeaderRight {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.modalInputs {
+  margin-bottom: 20px;
+  height: 33px !important;
+}
+
+.columnScrollContainer {
+  /* For Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+
+  /* For Chrome, Safari, and Opera */
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 2px solid transparent;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .open .columnScrollContainer {
+    scrollbar-color: rgba(193, 232, 65, 0.5) transparent;
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(193, 232, 65, 0.5);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(193, 232, 65, 0.7);
+    }
+  }
+
+  .inProgress .columnScrollContainer {
+    scrollbar-color: rgba(203, 93, 0, 0.5) transparent;
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(203, 93, 0, 0.5);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(203, 93, 0, 0.7);
+    }
+  }
+}

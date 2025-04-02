@@ -1,0 +1,95 @@
+.managerPage {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inventoryForm {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  select {
+    font-size: 25px;
+  }
+  option {
+    font-size: 18px;
+  }
+  label {
+    font-size: 12px;
+    color: #8a8c98;
+  }
+  input {
+    height: 33px;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid;
+    background-color: #2a2a2a;
+    color: #fff;
+    border-color: #2a2a2a;
+    box-shadow: none;
+    &:focus {
+      background-color: #2a2a2a;
+      color: #fff;
+      border-color: #fff;
+      box-shadow: none;
+    }
+    &:hover {
+      background-color: #2a2a2a;
+      border-color: #c9c9c9;
+    }
+  }
+  select {
+    background-color: var(--header-bgColor);
+    color: var(--text-color);
+  }
+}
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+.actionButton {
+  background: transparent !important;
+  border: none !important;
+  color: #fff;
+  svg {
+    background-color: transparent;
+  }
+  &:hover {
+    background-color: #474a52 !important;
+  }
+}
+.inventoryTable {
+  width: 100%;
+  margin: 20px;
+}
+
+.inventoryTable th,
+.inventoryTable td {
+  padding: 10px;
+  text-align: left;
+}
+
+.customModal {
+  // background-color: var(--header-bgColor) !important;
+  color: var(--text-color);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}

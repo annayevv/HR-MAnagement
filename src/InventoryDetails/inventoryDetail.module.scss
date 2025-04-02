@@ -1,0 +1,149 @@
+.inventoryPage {
+  padding: 24px;
+  background-color: #1e1e1e;
+  justify-content: space-between;
+  gap: 20px;
+  display: flex;
+}
+
+.detailCard {
+  background-color: #2d2d2d !important;
+  border: none !important;
+  width: 50%;
+
+  :global(.ant-card-body) {
+    padding: 24px;
+  }
+}
+
+.employeeCard {
+  background-color: #2d2d2d !important;
+  border: none !important;
+  width: 50%;
+
+  :global(.ant-card-body) {
+    padding: 24px !important;
+  }
+}
+
+.statusContainer {
+  margin-bottom: 24px;
+}
+
+.statusTag {
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+  
+  &.available {
+    background-color: rgba(52, 211, 153, 0.1);
+    color: #34D399;
+    border: 1px solid #34D399;
+  }
+  
+  &.notAvailable {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: #EF4444;
+    border: 1px solid #EF4444;
+  }
+}
+
+.priceDetails {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.priceItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  input {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #2a2a2a;
+    color: #f1f1f1;
+    border: 0.5px solid #474a52;
+    width: 100%;
+  }
+}
+
+.timestamps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  input {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #2a2a2a;
+    color: #f1f1f1;
+    border: 0.5px solid #474a52;
+    width: 100%;
+  }
+}
+
+.timestampItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  color: #a1a1aa;
+  font-size: 14px;
+}
+
+.value {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.employeeList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.employeeItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #404040;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.employeeName {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.quantity {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 0;
+  color: #a1a1aa;
+  gap: 16px;
+
+  svg {
+    color: #a1a1aa;
+  }
+
+  p {
+    margin: 0;
+    font-size: 16px;
+  }
+}

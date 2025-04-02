@@ -1,0 +1,196 @@
+.employeePage {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  gap: 20px;
+
+  .employeeProfile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // gap: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+    .profileImage {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid;
+    }
+
+    h2 {
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+      color: var(--text-color);
+    }
+    &_content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  .inventoryContainer {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  .background{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 60%;
+    h2{
+      font-size: 16px;
+      color: #8A8C98;
+    }
+    p{
+      font-size: 12px;
+      color: #8A8C98;
+    }
+  }
+  .mainInventory {
+    min-height: 527px;
+   width: 100%;
+  }
+  .employeeInventory {
+    button {
+      background-color: transparent;
+      box-shadow: none;
+      border: none;
+      cursor: pointer;
+      color: #fff;
+      &:hover {
+        background: #474a52 !important;
+        color: #fff !important;
+      }
+    }
+  }
+  .employeeInventory,
+  .mainInventory {
+    // height: 250px;
+    // width: 45%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #212224;
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 10px;
+        display: flex;
+        background-color: #2a2a2a;
+        gap: 30px;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 10px;
+        box-shadow: none;
+        padding-left: 10px;
+
+        .inventoryItem {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          border-bottom: 1px solid;
+          margin: 5px;
+
+          span {
+            flex: 1;
+          }
+
+          input[type="number"] {
+            margin-bottom: 5px;
+            width: 90px;
+            padding: 5px;
+            border-radius: 4px;
+            color: var(--text-color);
+            border: 1px solid #ddd;
+            background-color: var(--input-bgColor);
+          }
+          input[type="text"] {
+            margin-bottom: 5px;
+            width: 90px;
+            padding: 5px;
+            border-radius: 4px;
+            color: var(--text-color);
+            border: 1px solid #ddd;
+            background-color: var(--input-bgColor);
+          }
+        }
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .deleteButton,
+  .updateButton {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+
+    &:hover {
+      background-color: #cc0000;
+    }
+  }
+  .updateButton {
+    background-color: skyblue;
+    &:hover {
+      background-color: blue;
+    }
+  }
+
+  .removeButton {
+    color: red !important;
+    padding: 3px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .addButton {
+    margin-top: 25px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+
+    &:hover {
+      background-color: #45a049;
+    }
+  }
+}
+.customModal {
+  width: 900px !important;
+}

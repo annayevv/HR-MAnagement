@@ -1,0 +1,75 @@
+.modal {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .newAction {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    input {
+      flex: 1;
+    }
+  }
+
+  .form {
+    margin-top: 8px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 16px;
+  }
+}
+.custom-select-dropdown {
+  background-color: #2a2a2a !important;
+}
+.tableContainer{
+  max-height: 250px;
+  overflow-y: auto;
+  padding: 5px;
+}
+.table {
+  width: 100%;
+  overflow: hidden;
+  border-collapse: collapse;
+  opacity: 1;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  max-height: 0;
+
+  &.visible {
+    max-height: 500px;
+    opacity: 1;
+  }
+  tr,
+  th,
+  td {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+  }
+  td {
+    padding-left: 10px;
+    color: #fff;
+  }
+  tr{
+    border-bottom: 2px solid #2A2A2A;
+  }
+}
+.actionButton {
+  background: transparent !important;
+  border: none !important;
+  color: #fff;
+  svg {
+    background-color: transparent;
+  }
+  &:hover {
+    background-color: #474a52 !important;
+  }
+}

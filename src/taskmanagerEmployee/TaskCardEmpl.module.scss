@@ -1,0 +1,43 @@
+.taskCard {
+  // background-color: #F53B3B1A;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 15px;
+  box-shadow: none;
+  border: none;
+  transition: all 0.2s ease;
+
+  // cursor: grab;
+
+  h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #f1f1f1;
+  }
+
+  p {
+    font-size: 12px;
+    margin: 0 0 5px;
+    color: #c9c9c9;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #474a52;
+  padding-top: 10px;
+  p {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+}

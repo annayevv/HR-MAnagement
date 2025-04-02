@@ -1,0 +1,243 @@
+.profileEditContainer {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  background-color: #212224;
+  width: 50%;
+  height: 527px;
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 100%;
+  label {
+    font-size: 14px;
+    color: #8a8c98;
+    margin-bottom: 5px;
+  }
+  input {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #2a2a2a;
+    color: #f1f1f1;
+    border: 0.5px solid #474a52;
+  }
+  input:-webkit-autofill {
+    background-color: #373737 !important;
+    -webkit-box-shadow: 0 0 0px 1000px #373737 inset !important;
+    color: #fff !important;
+  }
+  input:-webkit-autofill::first-line {
+    color: #fff !important;
+  }
+}
+
+.content {
+  display: flex;
+}
+
+.profilePictureSection {
+  flex: 1;
+  margin-right: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  max-width: 190px;
+  h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .profilePicture {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    border: 1px solid;
+    border-radius: 14px;
+    img {
+      width: 100%;
+      border-radius: 14px;
+    }
+  }
+  p {
+    font-size: 14px;
+    color: var(--text-color);
+    margin: 10px 0;
+  }
+  .uploadButton {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      background-color: #0069d9;
+    }
+  }
+}
+
+.accountDetails {
+  width: 100%;
+  h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    .formGroup {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      label {
+        font-size: 14px;
+        color: #6c757d;
+      }
+      input {
+        padding: 8px;
+        font-size: 16px;
+        border-radius: 4px;
+        background-color: #2a2a2a;
+        color: #f1f1f1;
+        border: 0.5px solid #474a52;
+      }
+      :global(.ant-picker) {
+        background-color: #2a2a2a;
+        height: 40px;
+        input {
+          padding: 0;
+          border: none;
+        }
+      }
+    }
+    .formGroupRow {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
+.cont{
+  display: flex;
+  gap: 10px;
+  @media screen and (max-width:1300px) {
+    flex-direction: column;
+  }
+}
+.dropzone {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  padding: 20px;
+  border-radius: 14px;
+  background-color: #2a2a2a;
+  color: var(--text-color);
+  cursor: pointer;
+  text-align: center;
+  transition: border-color 0.3s ease;
+  p,
+  span,
+  b {
+    color: #fff;
+  }
+}
+
+.dropzone:hover {
+  border-color: #4a3aff;
+}
+
+.uploadIcon {
+  font-size: 24px;
+  fill: #4a3aff;
+  margin-bottom: 10px;
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.previewImage {
+  width: 180px;
+  height: 180px;
+
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid;
+}
+
+.buttonGroup {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+
+  button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+
+    &.editButton {
+      background-color: #2a2a2a;
+      color: #f1f1f1;
+      border: none;
+    }
+
+    &.saveButton {
+      background-color: #2a2a2a;
+      color: white;
+      border: none;
+    }
+
+    &.cancelButton {
+      background-color: #2a2a2a;
+      border: none;
+    }
+
+    &.deleteButton {
+      background-color: #d41515;
+      color: white;
+      border: none;
+    }
+  }
+}
+
+:global {
+  .ant-picker {
+    border-color: #474a52 !important;
+    &:hover {
+      border-color: #2a2a2a;
+    }
+  }
+  .ant-picker-panel {
+    background-color: #2a2a2a !important;
+
+    .ant-picker-header {
+      color: white !important;
+      border-bottom-color: #404040 !important;
+
+      button {
+        color: #f1f1f1 !important;
+      }
+    }
+
+    .ant-picker-cell {
+      color: white !important;
+    }
+
+    .ant-picker-cell-disabled {
+      color: #666 !important;
+    }
+  }
+}

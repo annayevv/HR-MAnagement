@@ -1,0 +1,81 @@
+.modal {
+  .container {
+    background-color: #212224;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .toggleTableButton {
+    background-color: #2a2a2a;
+  }
+
+  .toggleTableButton:hover {
+    background-color: #2a2a2a;
+  }
+
+  .add {
+        background-color: #2a2a2a;
+  }
+
+  .selecT {
+    background-color: #212224;
+    
+  }
+
+  .save {
+    border: #138565;
+    background-color: #138565;
+  }
+
+  .newAction {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    input {
+      flex: 1;
+    }
+  }
+
+  .form {
+    margin-top: 8px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 16px;
+  }
+}
+.custom-select-dropdown {
+  background-color: #2a2a2a !important;
+}
+.tableContainer {
+  max-height: 250px;
+  overflow-y: auto;
+  padding: 5px;
+}
+.table {
+  width: 100%;
+  overflow: hidden;
+  border-collapse: collapse;
+
+  max-height: 0;
+
+  &.visible {
+    max-height: 500px;
+
+  }
+  tr,
+  th,
+  td {
+    border: 1px solid black;
+    color: #fff;
+  }
+  td {
+    padding-left: 10px;
+    color: #fff;
+  }
+}

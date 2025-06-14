@@ -27,7 +27,7 @@ export const refreshAuthToken = async () => {
     console.error("Error refreshing token:", error);
     localStorage.removeItem("token");
     localStorage.removeItem("refreshToken");
-    window.location.href = "/login"; 
+
     throw error;
   }
 };

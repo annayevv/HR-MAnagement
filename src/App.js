@@ -58,7 +58,7 @@ function AppContent() {
   };
   return (
     <>
-      {location.pathname !== "/oraz/Login" && (
+      {location.pathname !== "/HrManagement/Login" && (
         <>
           <Navbar setSearchQuery={setSearchQuery} />
 
